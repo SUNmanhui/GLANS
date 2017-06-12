@@ -1,0 +1,16 @@
+#include <ros/ros.h>
+#include <tf/transform_listener.h>
+#include <geometry_msgs/PoseStamped.h>
+#include <cstdlib>
+#include "string"
+#include <stdio.h>
+
+#include "nav_msgs/Odometry.h"
+#include <boost/filesystem.hpp>
+
+#include "tf/transform_datatypes.h"
+#include "tf/transform_broadcaster.h"
+
+#include "gazebo_msgs/GetModelState.h"
+
+void OdomLogger(const nav_msgs::Odometry::ConstPtr &msg);
